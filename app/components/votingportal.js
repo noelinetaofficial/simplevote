@@ -41,7 +41,7 @@ export default function VotingPortal({ session }) {
         <h1 style={{ textAlign: 'center' }}>{hasVoted ? "Vote Recorded" : "Select Candidate"}</h1>
         
         <div style={s.grid}>
-          {['Candidate A', 'Candidate B'].map((c) => (
+          {['Noeline T A', 'Priyal Joshi'].map((c) => (
             <div key={c} style={s.glassCard}>
               <h3>{c}</h3>
               <button 
@@ -64,7 +64,7 @@ export default function VotingPortal({ session }) {
                   <tr key={i} style={{ borderBottom: '1px solid #eee' }}>
                     <td style={{ padding: '10px 0' }}>
                       <div style={{ fontWeight: 'bold' }}>{v.name}</div>
-                      <div style={{ fontSize: '11px', color: '#666' }}>ID: {v.voterId}</div>
+                      {/* Deleted the line that displayed the voter ID here */}
                     </td>
                     <td style={{ textAlign: 'right' }}>{v.candidate}</td>
                   </tr>

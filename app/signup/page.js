@@ -23,8 +23,7 @@ export default function SignUpPage() {
           <label style={styles.label}>Email Address</label>
           <input type="email" placeholder="email@example.com" style={styles.input} />
           
-          <label style={styles.label}>Password</label>
-          <input type="password" placeholder="Min. 8 characters" style={styles.input} />
+          {/* Password label and input have been removed */}
         </div>
 
         <button style={styles.registerBtn}>Register</button>
@@ -127,7 +126,7 @@ const styles = {
     marginBottom: '15px'
   },
   loginLink: {
-    color: '#ffd700', // Golden color to stand out
+    color: '#ffd700', // Kept your Golden color exactly as it was
     textDecoration: 'none',
     fontWeight: 'bold',
     marginLeft: '5px'
